@@ -3,17 +3,26 @@
     <head>
         <title></title>
         <meta charset="UTF-8">
+        <!-- Ensure proper rendering and touch zooming on mobile devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Link the external stylesheet -->
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <!-- Outer wrapper that provides the gradient background -->
         <div class="container">
+            <!-- Main to-do app card -->
             <div class="todo-app">
+                <!-- App heading with a decorative icon -->
                 <h2>To Do List <img src="images/icon.png"></h2>
+
+                <!-- Input row: text field and Add button -->
                 <div class="row">
                     <input type="text" id="input-box" placeholder="Add your text">
                     <button onclick="addTask()" id="add-btn">Add</button>
                 </div>
+
+                <!-- Unordered list where task items are dynamically inserted -->
                 <ul id="list-container">
                 </ul>                 
 
@@ -21,6 +30,7 @@
 
             
         </div>
+        <!-- Load the to-do list JavaScript logic -->
         <script src="script.js"></script>
         
     
