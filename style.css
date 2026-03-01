@@ -1,3 +1,5 @@
+/* ===== Global Reset ===== */
+/* Remove default margin, padding, and set consistent box-sizing and font */
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +7,8 @@
     box-sizing: border-box;
 }
 
+/* ===== Full-Page Container ===== */
+/* Centered gradient background that fills the entire viewport */
 .container{
     width: 100%;
     min-height: 100vh;
@@ -12,6 +16,8 @@
     padding: 10px;
 }
 
+/* ===== To-Do App Card ===== */
+/* White card centered on the page with rounded corners */
 .todo-app{
     width: 100%;
     max-width: 500px;
@@ -21,6 +27,8 @@
     border-radius: 10px;
 }
 
+/* ===== App Title ===== */
+/* Dark blue heading with an inline icon */
 .todo-app h2{
     color: #002765;
     display: flex;
@@ -28,11 +36,15 @@
     margin-bottom: 20px;
 } 
 
+/* ===== Title Icon ===== */
+/* Small icon displayed next to the heading text */
 .todo-app h2 img{
     width: 30px;
     margin-left: 10px;
 }
 
+/* ===== Input Row ===== */
+/* Pill-shaped row that contains the text input and the Add button */
 .row{
     display: flex;
     align-items: center;
@@ -43,6 +55,8 @@
     margin-bottom: 25px;
 }
 
+/* ===== Text Input ===== */
+/* Borderless input that expands to fill the available space */
 input{
     flex: 1;
     border: none;
@@ -51,6 +65,8 @@ input{
     font-size: 16px;
 }
 
+/* ===== Add Button ===== */
+/* Purple pill-shaped button for submitting a new task */
 button{
     border: none;
     background: #9b59b6;
@@ -61,6 +77,8 @@ button{
     cursor: pointer;
 }
 
+/* ===== Task List Items ===== */
+/* Each task has left padding to accommodate the checkbox icon */
 ul li{
     list-style: none;
     font-size: 17px;
@@ -71,6 +89,8 @@ ul li{
 
 }
 
+/* ===== Unchecked Checkbox Icon ===== */
+/* Circular pseudo-element used as the unchecked state indicator */
 ul li::before{
     content: "";
     position: absolute;
@@ -85,17 +105,23 @@ ul li::before{
     
 }
 
+/* ===== Checked Task ===== */
+/* Strikethrough and grey text for completed tasks */
 ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
 
+/* ===== Checked Checkbox Icon ===== */
+/* Swap the background image to the checked state when task is complete */
 ul li.checked::before{
     background: url("images/checked.png");
     background-size: cover;
     background-position: center;
 }
 
+/* ===== Delete Button ===== */
+/* Trash-icon button positioned at the right side of each task */
 ul li span{
     position: absolute;
     right: 10px;
@@ -109,6 +135,8 @@ ul li span{
     cursor: pointer;
 }
 
+/* ===== Delete Button Hover ===== */
+/* Swap to the hover icon when the user hovers over the delete button */
 ul li span:hover{
     background: url("images/delete-hover.png");
     background-size: cover;
