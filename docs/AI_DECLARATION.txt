@@ -1,5 +1,4 @@
-source used : youtube(GreatStack
-) url : https://youtu.be/G0jO8kUrg-I
+source used : youtube(GreatStack) url : https://youtu.be/G0jO8kUrg-I
 
 ============================================================
            AI USAGE DECLARATION
